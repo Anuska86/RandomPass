@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>🔐 Generate a Secure Password</h1>
+      <p>Never use an insecure password again.</p>
+
+      <button id="generateBtn">Generate Password</button>
+
+      <div class="output">
+        <input type="text" id="passwordField" readonly />
+        <button id="copyBtn">📋 Copy</button>
+      </div>
+
+      <p id="copiedMsg" class="hidden">✅ Copied to clipboard!</p>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
