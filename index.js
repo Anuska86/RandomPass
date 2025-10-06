@@ -3,12 +3,20 @@ const generateBtn = document.getElementById("generateBtn");
 const passwordField = document.getElementById("passwordField");
 const copyBtn = document.getElementById("copyBtn");
 const copiedMsg = document.getElementById("copiedMsg");
+const lengthRange = document.getElementById("lengthRange");
+const lengthValue = document.getElementById("lengthValue");
 
 // Event: Generate password
 generateBtn.addEventListener("click", () => {
-  const password = generatePassword(18);
+  const length = parseInt(lengthRange.value, 10);
+  const password = generatePassword(length);
   passwordField.value = password;
   copiedMsg.classList.add("hidden");
+});
+
+//Range
+lengthRange.addEventListener("input", () => {
+  lengthValue.textContent = lengthRange.value;
 });
 
 // Event: Copy to clipboard
