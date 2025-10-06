@@ -6,7 +6,7 @@ const copiedMsg = document.getElementById("copiedMsg");
 
 // Event: Generate password
 generateBtn.addEventListener("click", () => {
-  const password = generatePassword(15);
+  const password = generatePassword(18);
   passwordField.value = password;
   copiedMsg.classList.add("hidden");
 });
@@ -36,7 +36,7 @@ function shuffle(array) {
   return array;
 }
 
-function generatePassword(length = 15) {
+function generatePassword(length = 18) {
   const characters = {
     lower: "abcdefghijklmnopqrstuvwxyz",
     upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
